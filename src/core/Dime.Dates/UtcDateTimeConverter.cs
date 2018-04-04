@@ -8,38 +8,40 @@ using System.Reflection;
 namespace Dime.Utilities
 {
     /// <summary>
-    /// Converts each DateTime or DateTime? field to a UTC
+    /// Converts each <see cref="DateTime" /> or its nullable equivalent field to a UTC
     /// </summary>
     public class UtcDateTimeConverter
     {
         #region Constructor
 
         /// <summary>
-        /// Default constructor
+        /// Initializes a new instance of the <see cref="UtcDateTimeConverter"/> class
         /// </summary>
         public UtcDateTimeConverter()
         {
         }
 
         /// <summary>
-        ///
+        /// Initializes a new instance of the <see cref="UtcDateTimeConverter"/> class
         /// </summary>
-        /// <param name="timeZone"></param>
+        /// <param name="timeZone">The time zone to use</param>
         public UtcDateTimeConverter(string timeZone)
         {
             if (string.IsNullOrEmpty(timeZone))
                 return;
-            else if (NodaTime.TimeZones.TzdbDateTimeZoneSource.Default.ZoneLocations.Any(x => x.ZoneId == timeZone))
-                this.TimeZone = timeZone;
-            else
-                throw new ArgumentException("Invalid time zone", "timeZone");
+
+            TimeZone = NodaTime.TimeZones.TzdbDateTimeZoneSource.Default.ZoneLocations.Any(x => x.ZoneId == timeZone)
+                ? timeZone
+                : throw new ArgumentException("Invalid time zone", nameof(timeZone));
         }
 
         #endregion Constructor
 
         #region Properties
 
-        private bool UseCurrentCulture { get { return string.IsNullOrEmpty(this.TimeZone); } }
+        private bool UseCurrentCulture
+            => string.IsNullOrEmpty(TimeZone);
+
         private string TimeZone { get; }
 
         #endregion Properties
@@ -49,13 +51,13 @@ namespace Dime.Utilities
         #region To Local Time
 
         /// <summary>
-        ///
+        /// Converts the date time to the local time
         /// </summary>
-        /// <param name="dt"></param>
-        /// <returns></returns>
+        /// <param name="dt">The date time to convert</param>
+        /// <returns>The localized date time</returns>
         public DateTime ConvertToLocalTime(DateTime dt)
         {
-            if (this.UseCurrentCulture)
+            if (UseCurrentCulture)
             {
                 CultureInfo currentCulture = CultureInfo.CurrentUICulture;
                 RegionInfo regionInfo = new RegionInfo(currentCulture.Name);
@@ -64,21 +66,16 @@ namespace Dime.Utilities
                     .Where(x => string.Compare(x.CountryCode, regionInfo.TwoLetterISORegionName, true) == 0)
                     .Select(x => x.ZoneId);
 
-                if (zoneIds != null && zoneIds.Any())
-                {
-                    DateTime dateTime = DateTime.SpecifyKind(dt, DateTimeKind.Utc);
-                    Instant dateTimeInstant = Instant.FromDateTimeUtc(dateTime);
-
-                    DateTimeZone timeZone = DateTimeZoneProviders.Tzdb[zoneIds.FirstOrDefault()];
-                    ZonedDateTime zonedDateTime = dateTimeInstant.InZone(timeZone);
-
-                    DateTime localDateTime = zonedDateTime.ToDateTimeUnspecified();
-                    return localDateTime;
-                }
-                else
-                {
+                if (!zoneIds.Any())
                     return dt;
-                }
+
+                DateTime dateTime = DateTime.SpecifyKind(dt, DateTimeKind.Utc);
+                Instant dateTimeInstant = Instant.FromDateTimeUtc(dateTime);
+
+                DateTimeZone timeZone = DateTimeZoneProviders.Tzdb[zoneIds.FirstOrDefault()];
+                ZonedDateTime zonedDateTime = dateTimeInstant.InZone(timeZone);
+
+                return zonedDateTime.ToDateTimeUnspecified();
             }
             else
             {
@@ -89,7 +86,7 @@ namespace Dime.Utilities
 
                 // Get user time zone
                 IDateTimeZoneProvider timeZoneProvider = DateTimeZoneProviders.Tzdb;
-                DateTimeZone usersTimezone = timeZoneProvider[this.TimeZone];
+                DateTimeZone usersTimezone = timeZoneProvider[TimeZone];
 
                 // Set the instant to the local time zone
                 ZonedDateTime usersZonedDateTime = instant.InZone(usersTimezone);
@@ -100,37 +97,40 @@ namespace Dime.Utilities
         }
 
         /// <summary>
-        ///
+        /// Converts the date time to the local time
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="entity"></param>
+        /// <param name="entity">The date time to convert</param>
+        /// <returns>The localized date time</returns>
         public void ConvertToLocalTime<T>(T entity)
         {
             if (entity == null)
                 return;
 
-            Func<PropertyInfo, bool> dateProp = x => (x.PropertyType == typeof(DateTime) || x.PropertyType == typeof(DateTime?)) && x.GetCustomAttribute<DateTimeKindAttribute>() != null;
+            Func<PropertyInfo, bool> dateProp = x =>
+                (x.PropertyType == typeof(DateTime) || x.PropertyType == typeof(DateTime?))
+                && x.GetCustomAttribute<DateTimeKindAttribute>() != null;
+
             IEnumerable<PropertyInfo> properties = entity.GetType().GetProperties().Where(dateProp);
 
             CultureInfo currentCulture = CultureInfo.CurrentUICulture;
             RegionInfo regionInfo = new RegionInfo(currentCulture.Name);
 
             IEnumerable<string> zoneIds = NodaTime.TimeZones.TzdbDateTimeZoneSource.Default.ZoneLocations
-                .Where(x => string.Compare(x.CountryCode, regionInfo.TwoLetterISORegionName, true) == 0)
+                .Where(x => String.Compare(x.CountryCode, regionInfo.TwoLetterISORegionName, StringComparison.OrdinalIgnoreCase) == 0)
                 .Select(x => x.ZoneId);
 
             foreach (PropertyInfo property in properties)
             {
                 DateTimeKindAttribute attr = property.GetCustomAttribute<DateTimeKindAttribute>();
 
-                var dt = property.PropertyType == typeof(DateTime?)
+                DateTime? dt = property.PropertyType == typeof(DateTime?)
                     ? (DateTime?)property.GetValue(entity)
                     : (DateTime)property.GetValue(entity);
 
                 if (dt == null)
                     continue;
 
-                if (zoneIds == null || !zoneIds.Any())
+                if (!zoneIds.Any())
                     continue;
 
                 DateTime dateTime = DateTime.SpecifyKind(dt.Value, attr.Kind);
@@ -149,22 +149,23 @@ namespace Dime.Utilities
         #region To UTC Time
 
         /// <summary>
-        ///
+        /// Converts the date time to  UTC time
         /// </summary>
-        /// <param name="dt"></param>
+        /// <param name="dt">The date time to convert</param>
+        /// <returns>The UTC date time</returns>
         public DateTime ConvertToUtc(DateTime dt)
         {
             // Fork this method into the use of the current culture to do the utc conversion
-            if (this.UseCurrentCulture)
+            if (UseCurrentCulture)
             {
                 CultureInfo currentCulture = CultureInfo.CurrentUICulture;
                 RegionInfo regionInfo = new RegionInfo(currentCulture.Name);
 
                 IEnumerable<string> zoneIds = NodaTime.TimeZones.TzdbDateTimeZoneSource.Default.ZoneLocations
-                    .Where(x => string.Compare(x.CountryCode, regionInfo.TwoLetterISORegionName, true) == 0)
+                    .Where(x => String.Compare(x.CountryCode, regionInfo.TwoLetterISORegionName, StringComparison.OrdinalIgnoreCase) == 0)
                     .Select(x => x.ZoneId);
 
-                if (zoneIds != null && zoneIds.Count() > 0)
+                if (zoneIds.Any())
                 {
                     DateTime dateTime = DateTime.SpecifyKind(dt, DateTimeKind.Utc);
                     Instant dateTimeInstant = Instant.FromDateTimeUtc(dateTime);
@@ -175,8 +176,8 @@ namespace Dime.Utilities
                     DateTime localDateTime = zonedDateTime.ToDateTimeUnspecified();
                     return localDateTime;
                 }
-                else
-                    return dt;
+
+                return dt;
             }
             else
             {
@@ -185,15 +186,13 @@ namespace Dime.Utilities
 
                 // Get the users' time zone
                 IDateTimeZoneProvider timeZoneProvider = DateTimeZoneProviders.Tzdb;
-                DateTimeZone usersTimezone = timeZoneProvider[this.TimeZone];
+                DateTimeZone usersTimezone = timeZoneProvider[TimeZone];
 
                 // Format the local DateTime instance with the time zones
                 ZonedDateTime zonedDbDateTime = localDateTime.InZoneLeniently(usersTimezone);
 
                 // At this point we have all information to convert to UTC: release the kraken!
-                DateTime utcDateTime = zonedDbDateTime.ToDateTimeUtc();
-
-                return utcDateTime;
+                return zonedDbDateTime.ToDateTimeUtc();                
             }
         }
 

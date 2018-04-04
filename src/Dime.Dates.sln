@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Dates", "core\Dime.Dat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E7B21F8D-FA27-4C97-8135-3B76E2BD7CA8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Utilities.Date.Tests", "test\Dime.Dates.Tests\Dime.Utilities.Date.Tests.csproj", "{2E0943BD-395F-4A48-A487-BC0FA903D286}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Utilities.Date.Tests", "test\Dime.Utilities.Date.Tests.csproj", "{2E0943BD-395F-4A48-A487-BC0FA903D286}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

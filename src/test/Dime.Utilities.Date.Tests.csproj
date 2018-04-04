@@ -21,8 +21,8 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\core\Dime.Dates\Dime.Dates.csproj" />
+  <ItemGroup>   
+    <ProjectReference Include="..\core\Dime.Dates\Dime.Dates.csproj" />
   </ItemGroup>
 
   <ItemGroup>

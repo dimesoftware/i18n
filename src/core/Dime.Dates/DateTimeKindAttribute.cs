@@ -16,22 +16,20 @@ namespace Dime.Utilities
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="kind"></param>
+        /// <param name="kind">The kind</param>
         public DateTimeKindAttribute(DateTimeKind kind)
         {
-            _kind = kind;
+            Kind = kind;
         }
 
         #endregion Constructor
 
         #region Properties
 
-        private readonly DateTimeKind _kind;
-
         /// <summary>
-        /// 
+        /// Gets or sets the kind
         /// </summary>
-        public DateTimeKind Kind => _kind;
+        public DateTimeKind Kind { get; }
 
         #endregion Properties
 
@@ -56,7 +54,7 @@ namespace Dime.Utilities
                 if (attribute == null)
                     continue;
 
-                var dateTime = property.PropertyType == typeof(DateTime?)
+                DateTime? dateTime = property.PropertyType == typeof(DateTime?)
                     ? (DateTime?)property.GetValue(entity)
                     : (DateTime)property.GetValue(entity);
 
