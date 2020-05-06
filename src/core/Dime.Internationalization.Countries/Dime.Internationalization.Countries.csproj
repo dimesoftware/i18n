@@ -12,6 +12,7 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RepositoryUrl>https://github.com/dimenics/dime-i18n</RepositoryUrl>
   </PropertyGroup>
 
 </Project>

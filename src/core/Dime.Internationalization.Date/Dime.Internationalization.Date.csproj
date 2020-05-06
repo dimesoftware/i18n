@@ -29,6 +29,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
+    <RepositoryUrl>https://github.com/dimenics/dime-i18n</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,5 +1,7 @@
 # Introduction
 
+![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-i18n?branchName=master)
+
 Dime.Internationalization aims to make internationalization in .NET just a little bit easier with a set of helper classes and methods.
 
 ## Getting Started
