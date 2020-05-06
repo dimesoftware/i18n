@@ -1,3 +1,6 @@
 **/bin
 **/obj
 *.vs
+TestResults
+**/**.DotSettings.user
+NuGet.config

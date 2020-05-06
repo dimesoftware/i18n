@@ -1,14 +1,10 @@
-﻿using System;
-using System.Globalization;
-using System.Threading;
+﻿using System.Threading;
 using Xunit;
 
-namespace Dime.Utilities.Date.Tests
+namespace System.Globalization.Tests
 {
     public class UtcDateTimeConverterTests
     {
-        #region Constructor
-
         /// <summary>
         /// Default constructor
         /// </summary>
@@ -16,31 +12,21 @@ namespace Dime.Utilities.Date.Tests
         {
         }
 
-        #endregion Constructor
+        [Fact]
+        public void UtcDateTimeConverter_Constructor_Default_ShouldNotThrowException()
+            => Assert.True(new UtcDateTimeConverter() != null);
 
         [Fact]
-        public void UtcDateTimeConverter_Constructor_Default()
-        {
-            UtcDateTimeConverter converter = new UtcDateTimeConverter();
-        }
+        public void UtcDateTimeConverter_Constructor_TimezoneIsEmpty_ShouldNotThrowException()
+            => Assert.True(new UtcDateTimeConverter(string.Empty) != null);
 
         [Fact]
-        public void UtcDateTimeConverter_Constructor_TimezoneIsEmpty_Instantiates()
-        {
-            UtcDateTimeConverter converter = new UtcDateTimeConverter(string.Empty);
-        }
+        public void UtcDateTimeConverter_Constructor_TimezoneIsNull_ShouldNotThrowExceptions()
+            => Assert.True(new UtcDateTimeConverter(null) != null);
 
         [Fact]
-        public void UtcDateTimeConverter_Constructor_TimezoneIsNull_Instantiates()
-        {
-            UtcDateTimeConverter converter = new UtcDateTimeConverter(null);
-        }
-
-        [Fact]
-        public void UtcDateTimeConverter_Constructor_TimezoneIsWrong_ThrowsArgumentException()
-        {
-            Assert.Throws<ArgumentException>(() => new UtcDateTimeConverter("Europe/Zakkemakke"));
-        }
+        public void UtcDateTimeConverter_Constructor_TimezoneIsWrong_ShouldThrowArgumentException()
+            => Assert.Throws<ArgumentException>(() => new UtcDateTimeConverter("Europe/Atlantis"));
 
         [Fact]
         public void UtcDateTimeConverter_ConvertToUtc_DateTime_UseCustomTimezone_Success()
@@ -51,15 +37,11 @@ namespace Dime.Utilities.Date.Tests
 
             UtcDateTimeConverter converter = new UtcDateTimeConverter(timeZone);
 
-            string exactFormat = "yyyy-MM-dd HH:mm";
-            if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture,
-                DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out var output))
+            const string exactFormat = "yyyy-MM-dd HH:mm";
+            if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
             {
-                Console.WriteLine(output);
                 DateTime convertedDate = converter.ConvertToUtc(DateTime.SpecifyKind(output, DateTimeKind.Utc));
-                Console.WriteLine(convertedDate);
                 outputValue = convertedDate.ToString(exactFormat);
-                Console.WriteLine(outputValue);
             }
 
             Assert.True(outputValue == "2016-12-31 14:00");
@@ -75,23 +57,14 @@ namespace Dime.Utilities.Date.Tests
             string outputValue = "";
 
             UtcDateTimeConverter converter = new UtcDateTimeConverter();
-            string exactFormat = "yyyy-MM-dd HH:mm";
-            if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture,
-                DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out var output))
+            const string exactFormat = "yyyy-MM-dd HH:mm";
+            if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
             {
-                Console.WriteLine(output);
                 DateTime convertedDate = converter.ConvertToUtc(DateTime.SpecifyKind(output, DateTimeKind.Utc));
-                Console.WriteLine(convertedDate);
                 outputValue = convertedDate.ToString(exactFormat);
-                Console.WriteLine(outputValue);
             }
 
             Assert.True(outputValue == "2016-12-31 16:00");
-        }
-
-        [Fact]
-        public void UtcDateTimeConverter_ConvertToUtc_Entity_Success()
-        {
         }
 
         [Fact]
@@ -103,15 +76,11 @@ namespace Dime.Utilities.Date.Tests
 
             UtcDateTimeConverter converter = new UtcDateTimeConverter(timeZone);
 
-            string exactFormat = "yyyy-MM-dd HH:mm";
-            if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture,
-                DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out var output))
+            const string exactFormat = "yyyy-MM-dd HH:mm";
+            if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
             {
-                Console.WriteLine(output);
                 DateTime convertedDate = converter.ConvertToLocalTime(DateTime.SpecifyKind(output, DateTimeKind.Utc));
-                Console.WriteLine(convertedDate);
                 outputValue = convertedDate.ToString(exactFormat);
-                Console.WriteLine(outputValue);
             }
 
             Assert.True(outputValue == "2016-12-31 16:00");
@@ -127,23 +96,14 @@ namespace Dime.Utilities.Date.Tests
             string outputValue = "";
 
             UtcDateTimeConverter converter = new UtcDateTimeConverter();
-            string exactFormat = "yyyy-MM-dd HH:mm";
-            if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture,
-                DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out var output))
+            const string exactFormat = "yyyy-MM-dd HH:mm";
+            if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
             {
-                Console.WriteLine(output);
                 DateTime convertedDate = converter.ConvertToLocalTime(DateTime.SpecifyKind(output, DateTimeKind.Utc));
-                Console.WriteLine(convertedDate);
                 outputValue = convertedDate.ToString(exactFormat);
-                Console.WriteLine(outputValue);
             }
 
             Assert.True(outputValue == "2016-12-31 16:00");
-        }
-
-        [Fact]
-        public void UtcDateTimeConverter_ConvertToLocalTime_Entity_Success()
-        {
         }
     }
 }

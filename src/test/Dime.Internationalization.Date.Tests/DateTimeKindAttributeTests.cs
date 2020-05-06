@@ -1,21 +1,9 @@
-﻿using System;
-using Xunit;
+﻿using Xunit;
 
-namespace Dime.Utilities.Date.Tests
+namespace System.Globalization.Tests
 {
     public class DateTimeKindAttributeTests
     {
-        #region Constructor
-
-        /// <summary>
-        /// Default constructor
-        /// </summary>
-        public DateTimeKindAttributeTests()
-        {
-        }
-
-        #endregion Constructor
-
         [Fact]
         public void DateTimeKindAttribute_Constructor_Default()
         {
@@ -56,13 +44,15 @@ namespace Dime.Utilities.Date.Tests
             DateTime dt = new DateTime(2018, 1, 1, 12, 30, 00, DateTimeKind.Local);
             DateTimeTestClass dateTimeTestClass = new DateTimeTestClass(dt);
 
-            DateTimeKindAttribute.Apply(dateTimeTestClass);        
+            DateTimeKindAttribute.Apply(dateTimeTestClass);
         }
 
         private class DateTimeTestClass
         {
             [DateTimeKindAttribute(DateTimeKind.Utc)]
-            public DateTime MyDateTime { get; private set; }
+            // ReSharper disable once AutoPropertyCanBeMadeGetOnly.Local
+            // ReSharper disable once MemberCanBePrivate.Local
+            public DateTime MyDateTime { get; set; }
 
             [DateTimeKindAttribute(DateTimeKind.Utc)]
             public DateTime? MyNullableDateTime { get; private set; }

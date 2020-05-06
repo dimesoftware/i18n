@@ -1,19 +1,15 @@
-﻿using NodaTime;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using NodaTime;
 
-namespace Dime.Utilities
+namespace System.Globalization
 {
     /// <summary>
     /// Converts each <see cref="DateTime" /> or its nullable equivalent field to a UTC
     /// </summary>
     public class UtcDateTimeConverter
     {
-        #region Constructor
-
         /// <summary>
         /// Initializes a new instance of the <see cref="UtcDateTimeConverter"/> class
         /// </summary>
@@ -35,18 +31,10 @@ namespace Dime.Utilities
                 : throw new ArgumentException("Invalid time zone", nameof(timeZone));
         }
 
-        #endregion Constructor
-
-        #region Properties
-
         private bool UseCurrentCulture
             => string.IsNullOrEmpty(TimeZone);
 
         private string TimeZone { get; }
-
-        #endregion Properties
-
-        #region Methods
 
         #region To Local Time
 
@@ -192,12 +180,10 @@ namespace Dime.Utilities
                 ZonedDateTime zonedDbDateTime = localDateTime.InZoneLeniently(usersTimezone);
 
                 // At this point we have all information to convert to UTC: release the kraken!
-                return zonedDbDateTime.ToDateTimeUtc();                
+                return zonedDbDateTime.ToDateTimeUtc();
             }
         }
 
         #endregion To UTC Time
-
-        #endregion Methods
     }
 }

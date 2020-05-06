@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Dime.Utilities
+namespace System.Globalization
 {
     /// <summary>
     /// Attribute usable by Entity Framework to set the DateTimeKind on the property
@@ -11,10 +10,8 @@ namespace Dime.Utilities
     [AttributeUsage(AttributeTargets.Property)]
     public class DateTimeKindAttribute : Attribute
     {
-        #region Constructor
-
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="kind">The kind</param>
         public DateTimeKindAttribute(DateTimeKind kind)
@@ -22,18 +19,10 @@ namespace Dime.Utilities
             Kind = kind;
         }
 
-        #endregion Constructor
-
-        #region Properties
-
         /// <summary>
         /// Gets or sets the kind
         /// </summary>
-        public DateTimeKind Kind { get; }
-
-        #endregion Properties
-
-        #region Methods
+        public DateTimeKind Kind { get; set; }
 
         /// <summary>
         ///
@@ -64,7 +53,5 @@ namespace Dime.Utilities
                 property.SetValue(entity, DateTime.SpecifyKind(dateTime.Value, attribute.Kind));
             }
         }
-
-        #endregion Methods
     }
 }
