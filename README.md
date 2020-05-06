@@ -1,6 +1,4 @@
-# Introduction 
-
-![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-linq?branchName=master) [![Dime.Linq package in Dime.Scheduler feed in Azure Artifacts](https://feeds.dev.azure.com/dimenicsbe/_apis/public/Packaging/Feeds/a7b896fd-9cd8-4291-afe1-f223483d87f0/Packages/a4ea1a44-b4ee-49dd-ba2f-eff013a1c9ce/Badge)](https://dev.azure.com/dimenicsbe/Utilities/_packaging?_a=package&feed=a7b896fd-9cd8-4291-afe1-f223483d87f0&package=a4ea1a44-b4ee-49dd-ba2f-eff013a1c9ce&preferRelease=true)
+# Introduction
 
 Dime.Internationalization aims to make internationalization in .NET just a little bit easier with a set of helper classes and methods.
 
