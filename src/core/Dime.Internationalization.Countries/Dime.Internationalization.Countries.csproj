@@ -5,6 +5,7 @@
     <Authors>Dimenics</Authors>
     <Product>Dimenics</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Wraps the list of countries in the world with a few helpful classes.</Description>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -13,6 +14,7 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <RepositoryUrl>https://github.com/dimenics/dime-i18n</RepositoryUrl>
+    <Version>1.0.0.0-alpha.2</Version>
   </PropertyGroup>
 
 </Project>

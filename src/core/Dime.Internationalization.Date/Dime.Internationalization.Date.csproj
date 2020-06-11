@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Description>Extensions and utilities for Date related issues</Description>
+    <Description>Date related utilities.</Description>
     <AssemblyTitle>Dime.Utilities</AssemblyTitle>
-    <VersionPrefix>1.0.2</VersionPrefix>
+    <VersionPrefix>1.0.0</VersionPrefix>
     <Authors>Dimenics</Authors>
     <TargetFrameworks>netstandard2.0;netstandard2.1;net461</TargetFrameworks>
     <AssemblyName>Dime.Internationalization.Date</AssemblyName>
