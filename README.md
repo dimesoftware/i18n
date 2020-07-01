@@ -1,6 +1,6 @@
 # Introduction
 
-![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-i18n?branchName=master)
+![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-i18n?branchName=master) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/134/master)
 
 Dime.Internationalization aims to make internationalization in .NET just a little bit easier with a set of helper classes and methods.
 
@@ -49,10 +49,10 @@ public IEnumerable<Customer> Get()
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
 
-Please make sure to update tests as appropriate.
+Pull requests are welcome. Please check out the contribution and code of conduct guidelines.
 
-# License
+## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
