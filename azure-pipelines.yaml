@@ -1,22 +1,24 @@
 pool:
   vmImage: windows-latest
-steps:
-- task: solidify-labs.chucknorris-build-enhancer.chuck-norris-task.ChuckNorrisTask@0
-  displayName: Quote
+variables:
+  BuildConfiguration: 'Release'
 
+steps:
 - task: DotNetCoreCLI@2
-  displayName: 'dotnet restore'
+  displayName: Restore
   inputs:
     command: restore
     projects: '**/*.csproj'
 
 - task: DotNetCoreCLI@2
-  displayName: 'dotnet build'
+  displayName: Build
   inputs:
-    projects: '**/*.sln'
+    projects: '**/*.csproj'
+    arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
-  displayName: 'dotnet test'
+  displayName: Test
   inputs:
     command: test
     projects: '**/*.csproj'
+    arguments: '--configuration $(BuildConfiguration) --collect "Code coverage"'
