@@ -2,7 +2,7 @@
 
 ![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-i18n?branchName=master) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/134/master)
 
-Dime.Internationalization aims to make internationalization in .NET just a little bit easier with a set of helper classes and methods.
+Dime.i18n aims to make internationalization in .NET just a little bit easier with a set of helper classes and methods.
 
 ## Getting Started
 
@@ -11,10 +11,10 @@ Dime.Internationalization aims to make internationalization in .NET just a littl
 
 ## About this project
 
-This repository is split it in several projects. Each one has a very specific focus:
+This repository is split it in several projects. Each one has a specific focus:
 
-- Dime.Internationalization.Date is there to convert `DateTime` objects from UTC to the local (i.e. user-defined) time zone to UTC and vice versa.
-- Dime.Internationalization.Countries provides some capabilities to retrieve a list of the world's countries.
+- Dime.i18n.Date is there to convert `DateTime` objects from UTC to the local (i.e. user-defined) time zone to UTC and vice versa.
+- Dime.i18n.Countries provides some capabilities to retrieve a list of the world's countries.
 
 ## Build and Test
 
@@ -24,9 +24,9 @@ This repository is split it in several projects. Each one has a very specific fo
 
 ## Installation
 
-Use the package manager NuGet to install Dime.Internationalization:
+Use the package manager NuGet to install Dime.i18n:
 
-`dotnet add package Dime.Internationalization.{SubProjectName}`
+`dotnet add package Dime.i18n.{SubProjectName}`
 
 ## Usage
 
@@ -44,6 +44,17 @@ public IEnumerable<Customer> Get()
      // Use custom extension called Tap to iterate through each item without changing the return type and object
      // The code inside the tap method is not necessarily a good practice but it shows the power of this library
      return customers.Tap(x => x.Date = converter.ConvertToLocalTime(x.Date));
+}
+
+[HttpGet]
+public IEnumerable<Customer> GetWithExtension()
+{
+     string timezone = CurrentUser.GetTimeZone(); // Fetch time zone from HTTP Context
+     IEnumerable<Customer> customers = MyDbContext.Customers.ToList(); // Dates in database should be stored in UTC
+
+     // Use custom extension called Tap to iterate through each item without changing the return type and object
+     // The code inside the tap method is not necessarily a good practice but it shows the power of this library
+     return customers.Tap(x => x.Date = x.Date.ToLocal("America/New_York"));
 }
 ```
 

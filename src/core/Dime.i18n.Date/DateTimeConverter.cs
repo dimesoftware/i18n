@@ -1,13 +1,8 @@
-﻿using System.Linq;
-using NodaTime.TimeZones;
+﻿using NodaTime.TimeZones;
+using System.Linq;
 
 namespace System.Globalization
 {
-    public interface IDateTimeConverter
-    {
-        DateTime Convert(DateTime dt);
-    }
-
     public abstract class DateTimeConverter
     {
         /// <summary>
