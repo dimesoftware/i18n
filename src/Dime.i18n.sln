@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Internationalization.Date", "core\Dime.Internationalization.Date\Dime.Internationalization.Date.csproj", "{5E03484C-AA89-4AD0-8CCF-C22812853D0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.i18n.Date", "core\Dime.i18n.Date\Dime.i18n.Date.csproj", "{5E03484C-AA89-4AD0-8CCF-C22812853D0F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E7B21F8D-FA27-4C97-8135-3B76E2BD7CA8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Internationalization.Date.Tests", "test\Dime.Internationalization.Date.Tests\Dime.Internationalization.Date.Tests.csproj", "{2E0943BD-395F-4A48-A487-BC0FA903D286}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.i18n.Date.Tests", "test\Dime.i18n.Date.Tests\Dime.i18n.Date.Tests.csproj", "{2E0943BD-395F-4A48-A487-BC0FA903D286}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dime.Internationalization.Countries", "core\Dime.Internationalization.Countries\Dime.Internationalization.Countries.csproj", "{33EB80EA-4D49-4D59-B19C-088441F859B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.i18n.Countries", "core\Dime.i18n.Countries\Dime.i18n.Countries.csproj", "{33EB80EA-4D49-4D59-B19C-088441F859B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dime.Internationalization.Countries.Tests", "test\Dime.Internationalization.Countries.Tests\Dime.Internationalization.Countries.Tests.csproj", "{488E34B1-3498-472C-BC3E-80004488CC15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.i18n.Countries.Tests", "test\Dime.i18n.Countries.Tests\Dime.i18n.Countries.Tests.csproj", "{488E34B1-3498-472C-BC3E-80004488CC15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

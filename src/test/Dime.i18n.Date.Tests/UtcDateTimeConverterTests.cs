@@ -5,13 +5,6 @@ namespace System.Globalization.Tests
 {
     public class UtcDateTimeConverterTests
     {
-        /// <summary>
-        /// Default constructor
-        /// </summary>
-        public UtcDateTimeConverterTests()
-        {
-        }
-
         [Fact]
         public void UtcDateTimeConverter_Constructor_Default_ShouldNotThrowException()
             => Assert.True(new UtcDateTimeConverter() != null);
@@ -40,7 +33,7 @@ namespace System.Globalization.Tests
             const string exactFormat = "yyyy-MM-dd HH:mm";
             if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
             {
-                DateTime convertedDate = converter.ConvertToUtc(DateTime.SpecifyKind(output, DateTimeKind.Utc));
+                DateTime convertedDate = converter.Convert(DateTime.SpecifyKind(output, DateTimeKind.Utc));
                 outputValue = convertedDate.ToString(exactFormat);
             }
 
@@ -60,46 +53,7 @@ namespace System.Globalization.Tests
             const string exactFormat = "yyyy-MM-dd HH:mm";
             if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
             {
-                DateTime convertedDate = converter.ConvertToUtc(DateTime.SpecifyKind(output, DateTimeKind.Utc));
-                outputValue = convertedDate.ToString(exactFormat);
-            }
-
-            Assert.True(outputValue == "2016-12-31 16:00");
-        }
-
-        [Fact]
-        public void UtcDateTimeConverter_ConvertToLocalTime_DateTime_UseCustomTimezone_Success()
-        {
-            const string inputValue = "2016-12-31 15:00";
-            string outputValue = "";
-            const string timeZone = "Europe/Brussels";
-
-            UtcDateTimeConverter converter = new UtcDateTimeConverter(timeZone);
-
-            const string exactFormat = "yyyy-MM-dd HH:mm";
-            if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
-            {
-                DateTime convertedDate = converter.ConvertToLocalTime(DateTime.SpecifyKind(output, DateTimeKind.Utc));
-                outputValue = convertedDate.ToString(exactFormat);
-            }
-
-            Assert.True(outputValue == "2016-12-31 16:00");
-        }
-
-        [Fact]
-        public void UtcDateTimeConverter_ConvertToLocalTime_DateTime_UseCurrentTimezone_Success()
-        {
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("nl-BE");
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("nl-BE");
-
-            const string inputValue = "2016-12-31 15:00";
-            string outputValue = "";
-
-            UtcDateTimeConverter converter = new UtcDateTimeConverter();
-            const string exactFormat = "yyyy-MM-dd HH:mm";
-            if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
-            {
-                DateTime convertedDate = converter.ConvertToLocalTime(DateTime.SpecifyKind(output, DateTimeKind.Utc));
+                DateTime convertedDate = converter.Convert(DateTime.SpecifyKind(output, DateTimeKind.Utc));
                 outputValue = convertedDate.ToString(exactFormat);
             }
 
