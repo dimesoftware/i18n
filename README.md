@@ -1,4 +1,6 @@
-# Introduction
+<p align="center"><img src="assets/translate.svg?raw=true" width="150" alt="Logo - provided by Freepik"></p>
+
+# Dime.i18n
 
 [![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.i18n?repoName=dimenics%2Fi18n&branchName=master)](https://dev.azure.com/dimenicsbe/Utilities/_build/latest?definitionId=134&repoName=dimenics%2Fi18n&branchName=master) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/utilities/134) ![CodeQL](https://github.com/dimenics/i18n/workflows/CodeQL/badge.svg)
 
