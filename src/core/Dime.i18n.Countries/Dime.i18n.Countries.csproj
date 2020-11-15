@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net461</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;netstandard2.0;net461</TargetFrameworks>
     <Authors>Dimenics</Authors>
     <Product>Dimenics</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -9,12 +9,14 @@
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl>    
+    <PackageIconUrl>https://github.com/dimenics/dimenics/blob/master/assets/dimenicslogo.png?raw=true</PackageIconUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <RepositoryUrl>https://github.com/dimenics/dime-i18n</RepositoryUrl>
-    <Version>1.0.0.0-alpha.2</Version>
+    <PackageProjectUrl>https://github.com/dimenics/dime-i18n</PackageProjectUrl>
+    <Version>1.0.0.0-alpha.3</Version>
+    <LangVersion></LangVersion>
   </PropertyGroup>
 
 </Project>
