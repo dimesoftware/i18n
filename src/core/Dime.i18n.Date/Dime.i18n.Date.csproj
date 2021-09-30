@@ -11,11 +11,11 @@
     <Description>Date related utilities.</Description>
     <AssemblyTitle>Dime.Utilities</AssemblyTitle>
     <VersionPrefix>1.0.0</VersionPrefix>
-    <Authors>Dimenics</Authors>
+    <Authors>Dime Software</Authors>
     <TargetFrameworks>netstandard2.1;net461</TargetFrameworks>
     <AssemblyName>Dime.i18n.Date</AssemblyName>
     <PackageId>Dime.i18n.Date</PackageId>
-    <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl>    
+    <PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>    
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>

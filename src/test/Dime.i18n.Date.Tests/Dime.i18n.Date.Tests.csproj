@@ -10,7 +10,7 @@
   <PropertyGroup>
     <Description>Dime.Utilities.Date Tests</Description>
     <AssemblyTitle>Dime.Utilities.Date Tests</AssemblyTitle>
-    <Authors>Dimenics</Authors>
+    <Authors>Dime Software</Authors>
     <TargetFrameworks>netcoreapp3.1;net461</TargetFrameworks>
     <AssemblyName>Dime.Utilities.Date.Tests</AssemblyName>
     <PackageId>Dime.Utilities.Date.Tests</PackageId>
