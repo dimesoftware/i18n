@@ -1,10 +1,16 @@
 <p align="center"><img src="assets/translate.svg?raw=true" width="150" alt="Logo - provided by Freepik"></p>
 
-# Dime.i18n
+<div align="center">
+     <img src="https://dev.azure.com/dimesoftware/Utilities/_apis/build/status/dimenics.i18n?repoName=dimenics%2Fi18n&branchName=master" />
+     <img src="https://img.shields.io/azure-devops/coverage/dimesoftware/utilities/134"/> 
+     <img src="https://github.com/dimenics/i18n/workflows/CodeQL/badge.svg"/>
+     <img src="https://img.shields.io/:license-mit-brightgreen.svg?style=flat-square" />
+     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" />
+</div>
 
-[![Build Status](https://dev.azure.com/dimesoftware/Utilities/_apis/build/status/dimenics.i18n?repoName=dimenics%2Fi18n&branchName=master)](https://dev.azure.com/dimesoftware/Utilities/_build/latest?definitionId=134&repoName=dimenics%2Fi18n&branchName=master) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimesoftware/utilities/134) ![CodeQL](https://github.com/dimenics/i18n/workflows/CodeQL/badge.svg)
+<h1 align="center">i18n</h1>
 
-Dime.i18n aims to make internationalization in .NET just a little bit easier with a set of helper classes and methods.
+This repo aims to make internationalization in .NET just a little bit easier with a set of helper classes and methods.
 
 ## Getting Started
 
@@ -32,7 +38,7 @@ Use the package manager NuGet to install Dime.i18n:
 
 ## Usage
 
-``` csharp
+```csharp
 using System.Globalization;
 
 [HttpGet]
@@ -68,4 +74,4 @@ Pull requests are welcome. Please check out the contribution and code of conduct
 
 ## License
 
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+<img src="https://img.shields.io/:license-mit-brightgreen.svg?style=flat-square" />

@@ -1,47 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-    <SccProjectName>SAK</SccProjectName>
-    <SccProvider>SAK</SccProvider>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccLocalPath>SAK</SccLocalPath>
-  </PropertyGroup>
+	<PropertyGroup>
+		<Description>Date-related utilities.</Description>
+		<AssemblyTitle>Dime.Utilities</AssemblyTitle>
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<Authors>Dime Software</Authors>
+		<TargetFrameworks>net6.0;net461;net7.0</TargetFrameworks>
+		<AssemblyName>Dime.i18n.Date</AssemblyName>
+		<PackageId>Dime.i18n.Date</PackageId>
+		<PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<Version>1.0.0.0</Version>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<IncludeSource>True</IncludeSource>
+		<IncludeSymbols>True</IncludeSymbols>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<RootNamespace>Dime.i18n.Date</RootNamespace>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryType>git</RepositoryType>
+		<NeutralLanguage>en</NeutralLanguage>
+		<RepositoryUrl>https://github.com/dime-software/dime-i18n</RepositoryUrl>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <Description>Date related utilities.</Description>
-    <AssemblyTitle>Dime.Utilities</AssemblyTitle>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <Authors>Dime Software</Authors>
-    <TargetFrameworks>netstandard2.1;net461</TargetFrameworks>
-    <AssemblyName>Dime.i18n.Date</AssemblyName>
-    <PackageId>Dime.i18n.Date</PackageId>
-    <PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>    
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>1.0.0.0</Version>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <IncludeSource>True</IncludeSource>
-    <IncludeSymbols>True</IncludeSymbols>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
-    <RootNamespace>Dime.i18n.Date</RootNamespace>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryType>git</RepositoryType>
-    <NeutralLanguage>en</NeutralLanguage>
-    <RepositoryUrl>https://github.com/dimenics/dime-i18n</RepositoryUrl>
-  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="NodaTime" Version="3.1.2" />
+		<PackageReference Include="System.Globalization" Version="4.3.0" />
+		<PackageReference Include="System.Reflection" Version="4.3.0" />
+		<PackageReference Include="System.Threading.Thread" Version="4.3.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="NodaTime" Version="2.4.8" />
-    <PackageReference Include="System.Globalization" Version="4.3.0" />
-    <PackageReference Include="System.Reflection" Version="4.3.0" />
-    <PackageReference Include="System.Threading.Thread" Version="4.3.0" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+		<Reference Include="System" />
+		<Reference Include="Microsoft.CSharp" />
+	</ItemGroup>
 
 </Project>
