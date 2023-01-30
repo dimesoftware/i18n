@@ -9,21 +9,21 @@ namespace System.Globalization.Countries.Tests
         [Fact]
         public void CountryList_Count_ShouldReturn239()
         {
-            CountryList countries = new();
-            Assert.True(countries.Count() == 239);
+            NationsList countries = new();
+            Assert.True(countries.Count() == 247);
         }
 
         [Fact]
-        public void CountryList_Distinct_Count_ShouldReturn239()
+        public void CountryList_Distinct_Count_ShouldReturn247()
         {
-            CountryList countries = new();
-            Assert.True(countries.Distinct().Count() == 239);
+            NationsList countries = new();
+            Assert.True(countries.Distinct().Count() == 247);
         }
 
         [Fact]
         public void CountryList_GetEnumerator_ShouldEnumerate()
         {
-            CountryList countries = new();
+            NationsList countries = new();
 
             IEnumerator enumerator = (countries as IEnumerable).GetEnumerator();
             while (enumerator.MoveNext())
@@ -32,7 +32,7 @@ namespace System.Globalization.Countries.Tests
                     throw new Exception();
             }
 
-            Assert.True(countries.Distinct().Count() == 239);
+            Assert.True(countries.Distinct().Count() == 247);
         }
     }
 }

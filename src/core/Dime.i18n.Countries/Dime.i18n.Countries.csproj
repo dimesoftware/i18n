@@ -13,10 +13,9 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <RepositoryUrl>https://github.com/dime-software/dime-i18n</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/dime-software/dime-i18n</PackageProjectUrl>
-    <Version>1.0.1.0</Version>
+    <RepositoryUrl>https://github.com/dimesoftware/dime-i18n</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/dimesoftware/dime-i18n</PackageProjectUrl>
+    <Version>2.0.0.0-alpha.1</Version>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
-
 </Project>
