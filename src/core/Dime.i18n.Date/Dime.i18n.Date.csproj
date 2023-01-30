@@ -3,16 +3,15 @@
 	<PropertyGroup>
 		<Description>Date-related utilities.</Description>
 		<AssemblyTitle>Dime.Utilities</AssemblyTitle>
-		<VersionPrefix>1.0.0</VersionPrefix>
 		<Authors>Dime Software</Authors>
-		<TargetFrameworks>net6.0;net461;net7.0</TargetFrameworks>
+		<TargetFrameworks>net461;net7.0</TargetFrameworks>
 		<AssemblyName>Dime.i18n.Date</AssemblyName>
 		<PackageId>Dime.i18n.Date</PackageId>
 		<PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
 		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
 		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
 		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-		<Version>1.0.0.0</Version>
+		<Version>1.0.1.0</Version>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<IncludeSource>True</IncludeSource>
 		<IncludeSymbols>True</IncludeSymbols>
@@ -22,11 +21,12 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryType>git</RepositoryType>
 		<NeutralLanguage>en</NeutralLanguage>
+		<LangVersion>latest</LangVersion>
 		<RepositoryUrl>https://github.com/dime-software/dime-i18n</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="NodaTime" Version="3.1.2" />
+		<PackageReference Include="NodaTime" Version="3.1.6" />
 		<PackageReference Include="System.Globalization" Version="4.3.0" />
 		<PackageReference Include="System.Reflection" Version="4.3.0" />
 		<PackageReference Include="System.Threading.Thread" Version="4.3.0" />

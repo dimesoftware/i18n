@@ -34,7 +34,7 @@ namespace System.Globalization
             if (UseCurrentCulture)
             {
                 CultureInfo currentCulture = CultureInfo.CurrentUICulture;
-                RegionInfo regionInfo = new RegionInfo(currentCulture.Name);
+                RegionInfo regionInfo = new(currentCulture.Name);
 
                 IEnumerable<string> zoneIds = NodaTime.TimeZones.TzdbDateTimeZoneSource.Default.ZoneLocations
                     .Where(x => string.Compare(x.CountryCode, regionInfo.TwoLetterISORegionName, true) == 0)

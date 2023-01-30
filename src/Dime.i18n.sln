@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.i18n.Date", "core\Dime.i18n.Date\Dime.i18n.Date.csproj", "{5E03484C-AA89-4AD0-8CCF-C22812853D0F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E7B21F8D-FA27-4C97-8135-3B76E2BD7CA8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.i18n.Date.Tests", "test\Dime.i18n.Date.Tests\Dime.i18n.Date.Tests.csproj", "{2E0943BD-395F-4A48-A487-BC0FA903D286}"
 EndProject
@@ -38,10 +36,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{2E0943BD-395F-4A48-A487-BC0FA903D286} = {E7B21F8D-FA27-4C97-8135-3B76E2BD7CA8}
-		{488E34B1-3498-472C-BC3E-80004488CC15} = {E7B21F8D-FA27-4C97-8135-3B76E2BD7CA8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DEFE6915-1B43-400B-A4EC-675E7A1ADE9D}

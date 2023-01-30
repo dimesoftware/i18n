@@ -28,7 +28,7 @@ namespace System.Globalization.Tests
             string outputValue = "";
             const string timeZone = "Europe/Brussels";
 
-            UtcDateTimeConverter converter = new UtcDateTimeConverter(timeZone);
+            UtcDateTimeConverter converter = new(timeZone);
 
             const string exactFormat = "yyyy-MM-dd HH:mm";
             if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
@@ -49,7 +49,7 @@ namespace System.Globalization.Tests
             const string inputValue = "2016-12-31 15:00";
             string outputValue = "";
 
-            UtcDateTimeConverter converter = new UtcDateTimeConverter();
+            UtcDateTimeConverter converter = new();
             const string exactFormat = "yyyy-MM-dd HH:mm";
             if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
             {

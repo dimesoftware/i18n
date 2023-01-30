@@ -29,7 +29,7 @@ namespace System.Globalization.Tests
             const string timeZone = "Europe/Brussels";
 
             IDateTimeConverter converter = new LocalDateTimeConverter(timeZone);
-
+            
             const string exactFormat = "yyyy-MM-dd HH:mm";
             if (DateTime.TryParseExact(inputValue, exactFormat, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal, out DateTime output))
             {

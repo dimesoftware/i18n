@@ -7,7 +7,7 @@ namespace System.Globalization.Tests
         [Fact]
         public void DateTimeExtensions_ToUtc_ShouldConvert()
         {
-            DateTime dt = new DateTime(2020, 10, 7, 15, 0, 0);
+            DateTime dt = new(2020, 10, 7, 15, 0, 0);
             DateTime utcDt = dt.ToUtc("Europe/Brussels");
             Assert.True(utcDt == new DateTime(2020, 10, 7, 13, 0, 0));
         }
@@ -31,7 +31,7 @@ namespace System.Globalization.Tests
         [Fact]
         public void DateTimeExtensions_ToLocal_ShouldConvert()
         {
-            DateTime dt = new DateTime(2020, 10, 7, 13, 0, 0);
+            DateTime dt = new(2020, 10, 7, 13, 0, 0);
             DateTime utcDt = dt.ToLocal("Europe/Brussels");
             Assert.True(utcDt == new DateTime(2020, 10, 7, 15, 0, 0));
         }

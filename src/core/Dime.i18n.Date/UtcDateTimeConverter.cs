@@ -35,7 +35,7 @@ namespace System.Globalization
             if (UseCurrentCulture)
             {
                 CultureInfo currentCulture = CultureInfo.CurrentUICulture;
-                RegionInfo regionInfo = new RegionInfo(currentCulture.Name);
+                RegionInfo regionInfo = new(currentCulture.Name);
 
                 IEnumerable<string> zoneIds = NodaTime.TimeZones.TzdbDateTimeZoneSource.Default.ZoneLocations
                     .Where(x => string.Compare(x.CountryCode, regionInfo.TwoLetterISORegionName, StringComparison.OrdinalIgnoreCase) == 0)
@@ -56,7 +56,7 @@ namespace System.Globalization
             else
             {
                 // Get local DateTime instance into a LocalDateTime object
-                LocalDateTime localDateTime = new LocalDateTime(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute);
+                LocalDateTime localDateTime = new(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute);
 
                 // Get the users' time zone
                 IDateTimeZoneProvider timeZoneProvider = DateTimeZoneProviders.Tzdb;

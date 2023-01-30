@@ -9,21 +9,21 @@ namespace System.Globalization.Countries.Tests
         [Fact]
         public void CountryList_Count_ShouldReturn239()
         {
-            CountryList countries = new CountryList();
+            CountryList countries = new();
             Assert.True(countries.Count() == 239);
         }
 
         [Fact]
         public void CountryList_Distinct_Count_ShouldReturn239()
         {
-            CountryList countries = new CountryList();
+            CountryList countries = new();
             Assert.True(countries.Distinct().Count() == 239);
         }
 
         [Fact]
         public void CountryList_GetEnumerator_ShouldEnumerate()
         {
-            CountryList countries = new CountryList();
+            CountryList countries = new();
 
             IEnumerator enumerator = (countries as IEnumerable).GetEnumerator();
             while (enumerator.MoveNext())

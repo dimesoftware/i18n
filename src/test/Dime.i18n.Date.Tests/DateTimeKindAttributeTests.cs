@@ -7,17 +7,17 @@ namespace System.Globalization.Tests
         [Fact]
         public void DateTimeKindAttribute_Constructor_Default()
         {
-            DateTimeKindAttribute converter = new DateTimeKindAttribute(DateTimeKind.Utc);
+            DateTimeKindAttribute converter = new(DateTimeKind.Utc);
             Assert.True(converter.Kind == DateTimeKind.Utc);
         }
 
         [Fact]
         public void DateTimeKindAttribute_Apply_ParameterIsNull_DoesNothing()
         {
-            DateTimeKindAttribute converter = new DateTimeKindAttribute(DateTimeKind.Utc);
+            DateTimeKindAttribute converter = new(DateTimeKind.Utc);
             Assert.True(converter.Kind == DateTimeKind.Utc);
 
-            DateTime dt = new DateTime(2018, 1, 1, 12, 30, 00, DateTimeKind.Local);
+            DateTime dt = new(2018, 1, 1, 12, 30, 00, DateTimeKind.Local);
             DateTimeTestClass dateTimeTestClass = null;
             DateTimeKindAttribute.Apply(dateTimeTestClass);
         }
@@ -25,11 +25,11 @@ namespace System.Globalization.Tests
         [Fact]
         public void DateTimeKindAttribute_Apply_ParameterIsNotNull_DateTimeIsConverted()
         {
-            DateTimeKindAttribute converter = new DateTimeKindAttribute(DateTimeKind.Utc);
+            DateTimeKindAttribute converter = new(DateTimeKind.Utc);
             Assert.True(converter.Kind == DateTimeKind.Utc);
 
-            DateTime dt = new DateTime(2018, 1, 1, 12, 30, 00, DateTimeKind.Local);
-            DateTimeTestClass dateTimeTestClass = new DateTimeTestClass(dt);
+            DateTime dt = new(2018, 1, 1, 12, 30, 00, DateTimeKind.Local);
+            DateTimeTestClass dateTimeTestClass = new(dt);
 
             DateTimeKindAttribute.Apply(dateTimeTestClass);
             Assert.True(dateTimeTestClass.MyDateTime.Kind == DateTimeKind.Utc);
@@ -38,11 +38,11 @@ namespace System.Globalization.Tests
         [Fact]
         public void DateTimeKindAttribute_Apply_ParameterIsNotNull_DateTimeIsNull_DoesNothing()
         {
-            DateTimeKindAttribute converter = new DateTimeKindAttribute(DateTimeKind.Utc);
+            DateTimeKindAttribute converter = new(DateTimeKind.Utc);
             Assert.True(converter.Kind == DateTimeKind.Utc);
 
-            DateTime dt = new DateTime(2018, 1, 1, 12, 30, 00, DateTimeKind.Local);
-            DateTimeTestClass dateTimeTestClass = new DateTimeTestClass(dt);
+            DateTime dt = new(2018, 1, 1, 12, 30, 00, DateTimeKind.Local);
+            DateTimeTestClass dateTimeTestClass = new(dt);
 
             DateTimeKindAttribute.Apply(dateTimeTestClass);
         }

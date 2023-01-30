@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net461;net7.0</TargetFrameworks>
+    <TargetFrameworks>net461;net7.0</TargetFrameworks>
     <Authors>Dime Software</Authors>
     <Product>Dime Software</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -15,8 +15,8 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <RepositoryUrl>https://github.com/dime-software/dime-i18n</RepositoryUrl>
     <PackageProjectUrl>https://github.com/dime-software/dime-i18n</PackageProjectUrl>
-    <Version>1.0.0.0</Version>
-    <LangVersion></LangVersion>
+    <Version>1.0.1.0</Version>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
 </Project>
