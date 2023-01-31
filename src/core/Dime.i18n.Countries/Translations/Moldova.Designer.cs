@@ -61,11 +61,11 @@ namespace Dime.i18n.Countries.Translations {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Moldova.
         /// </summary>
-        internal static string en_Moldova {
+        internal static string en {
             get {
-                return ResourceManager.GetString("en Moldova", resourceCulture);
+                return ResourceManager.GetString("en", resourceCulture);
             }
         }
     }

@@ -61,7 +61,7 @@ namespace Dime.i18n.Countries.Translations {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Honduraas.
+        ///   Looks up a localized string similar to Honduras.
         /// </summary>
         internal static string en {
             get {
