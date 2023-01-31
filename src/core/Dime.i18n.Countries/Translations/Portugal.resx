@@ -119,5 +119,6 @@
   </resheader>
   <data name="en" xml:space="preserve">
     <value>Portugal</value>
+    <comment>Same for ES, NL, DE, FR</comment>
   </data>
 </root>

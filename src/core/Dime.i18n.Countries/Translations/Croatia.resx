@@ -117,7 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="de" xml:space="preserve">
+    <value>Kroatien</value>
+  </data>
   <data name="en" xml:space="preserve">
     <value>Croatia</value>
+  </data>
+  <data name="es" xml:space="preserve">
+    <value>Croacia</value>
+  </data>
+  <data name="fr" xml:space="preserve">
+    <value>Croatie</value>
+  </data>
+  <data name="nl" xml:space="preserve">
+    <value>Kroatië</value>
   </data>
 </root>

@@ -120,4 +120,7 @@
   <data name="en" xml:space="preserve">
     <value>China</value>
   </data>
+  <data name="fr" xml:space="preserve">
+    <value>Chine</value>
+  </data>
 </root>

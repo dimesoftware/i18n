@@ -68,5 +68,14 @@ namespace Dime.i18n.Countries.Translations {
                 return ResourceManager.GetString("en", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zimbabue.
+        /// </summary>
+        internal static string es {
+            get {
+                return ResourceManager.GetString("es", resourceCulture);
+            }
+        }
     }
 }

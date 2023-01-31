@@ -68,5 +68,32 @@ namespace Dime.i18n.Countries.Translations {
                 return ResourceManager.GetString("en", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Luxemburgo.
+        /// </summary>
+        internal static string es {
+            get {
+                return ResourceManager.GetString("es", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Luxembourg.
+        /// </summary>
+        internal static string fr {
+            get {
+                return ResourceManager.GetString("fr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Luxemburg.
+        /// </summary>
+        internal static string nl {
+            get {
+                return ResourceManager.GetString("nl", resourceCulture);
+            }
+        }
     }
 }

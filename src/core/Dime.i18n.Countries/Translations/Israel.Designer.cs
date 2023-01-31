@@ -68,5 +68,14 @@ namespace Dime.i18n.Countries.Translations {
                 return ResourceManager.GetString("en", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Israël.
+        /// </summary>
+        internal static string fr {
+            get {
+                return ResourceManager.GetString("fr", resourceCulture);
+            }
+        }
     }
 }
