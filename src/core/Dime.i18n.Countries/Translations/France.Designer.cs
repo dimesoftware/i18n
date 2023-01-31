@@ -79,6 +79,15 @@ namespace Dime.i18n.Countries.Translations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Francia.
+        /// </summary>
+        internal static string es {
+            get {
+                return ResourceManager.GetString("es", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to France.
         /// </summary>
         internal static string fr {

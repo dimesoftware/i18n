@@ -61,11 +61,38 @@ namespace Dime.i18n.Countries.Translations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Belgien.
+        /// </summary>
+        internal static string de {
+            get {
+                return ResourceManager.GetString("de", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Belgium.
         /// </summary>
         internal static string en {
             get {
                 return ResourceManager.GetString("en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bélgica.
+        /// </summary>
+        internal static string es {
+            get {
+                return ResourceManager.GetString("es", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Belgique.
+        /// </summary>
+        internal static string fr {
+            get {
+                return ResourceManager.GetString("fr", resourceCulture);
             }
         }
         

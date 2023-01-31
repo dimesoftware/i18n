@@ -59,5 +59,50 @@ namespace Dime.i18n.Countries.Translations {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Österreich.
+        /// </summary>
+        internal static string de {
+            get {
+                return ResourceManager.GetString("de", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Austria.
+        /// </summary>
+        internal static string en {
+            get {
+                return ResourceManager.GetString("en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Austria.
+        /// </summary>
+        internal static string es {
+            get {
+                return ResourceManager.GetString("es", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to L&apos;Autriche.
+        /// </summary>
+        internal static string fr {
+            get {
+                return ResourceManager.GetString("fr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oostenrijk.
+        /// </summary>
+        internal static string nl {
+            get {
+                return ResourceManager.GetString("nl", resourceCulture);
+            }
+        }
     }
 }

@@ -59,5 +59,50 @@ namespace Dime.i18n.Countries.Translations {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Italien.
+        /// </summary>
+        internal static string de {
+            get {
+                return ResourceManager.GetString("de", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Italy.
+        /// </summary>
+        internal static string en {
+            get {
+                return ResourceManager.GetString("en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Italia.
+        /// </summary>
+        internal static string es {
+            get {
+                return ResourceManager.GetString("es", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Italie.
+        /// </summary>
+        internal static string fr {
+            get {
+                return ResourceManager.GetString("fr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Italië.
+        /// </summary>
+        internal static string nl {
+            get {
+                return ResourceManager.GetString("nl", resourceCulture);
+            }
+        }
     }
 }

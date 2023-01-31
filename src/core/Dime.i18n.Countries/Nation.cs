@@ -9,15 +9,13 @@ namespace Dime.i18n.Countries.Nations
 {
     public class Nation
     {
-        public Nation(string name, string code, string altCode, Type resx)
+        public Nation(string code, string altCode, Type resx)
         {
-            Name = name;
             Code = code;
             AltCode = altCode;
             Resx = resx;
         }
 
-        public string Name { get; set; }
         public string Code { get; set; }
         public string AltCode { get; set; }
 

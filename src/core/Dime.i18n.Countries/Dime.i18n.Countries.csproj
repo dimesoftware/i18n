@@ -15,7 +15,7 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <RepositoryUrl>https://github.com/dimesoftware/i18n</RepositoryUrl>
     <PackageProjectUrl>https://github.com/dimesoftware/i18n</PackageProjectUrl>
-    <Version>2.0.0.0-alpha.2</Version>
+    <Version>2.0.0.0-alpha.3</Version>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 

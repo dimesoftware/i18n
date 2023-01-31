@@ -59,5 +59,14 @@ namespace Dime.i18n.Countries.Translations {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string en_Moldova {
+            get {
+                return ResourceManager.GetString("en Moldova", resourceCulture);
+            }
+        }
     }
 }
