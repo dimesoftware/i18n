@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;net7.0</TargetFrameworks>
-    <Authors>Dime Software</Authors>
+	  <TargetFrameworks>net8.0</TargetFrameworks>
+	  <Authors>Dime Software</Authors>
     <Product>Dime Software</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Description>Wraps the list of countries in the world with a few helpful classes.</Description>
@@ -13,10 +13,2238 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <RepositoryUrl>https://github.com/dime-software/dime-i18n</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/dime-software/dime-i18n</PackageProjectUrl>
-    <Version>1.0.1.0</Version>
+    <RepositoryUrl>https://github.com/dimesoftware/i18n</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/dimesoftware/i18n</PackageProjectUrl>
+    <Version>2.0.0.0</Version>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Update="Translations\Afghanistan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Afghanistan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\AlandIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AlandIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Albania.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Albania.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Algeria.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Algeria.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\AmericanSamoa.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AmericanSamoa.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Andorra.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Andorra.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Angola.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Angola.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Anguilla.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Anguilla.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Antarctica.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Antarctica.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\AntiguaAndBarbuda.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AntiguaAndBarbuda.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Argentina.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Argentina.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Armenia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Armenia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Aruba.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Aruba.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Australia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Australia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Austria.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Austria.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Azerbaijan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Azerbaijan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Bahamas.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Bahamas.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Bahrain.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Bahrain.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Bangladesh.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Bangladesh.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Barbados.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Barbados.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Belarus.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Belarus.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Belgium.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Belgium.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Belize.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Belize.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Benin.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Benin.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Bermuda.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Bermuda.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Bhutan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Bhutan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Bolivia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Bolivia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\BosniaAndHerzegovina.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BosniaAndHerzegovina.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Botswana.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Botswana.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\BouvetIsland.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BouvetIsland.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Brazil.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Brazil.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\BritishIndianOceanTerritory.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BritishIndianOceanTerritory.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\BritishVirginIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BritishVirginIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Brunei.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Brunei.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Bulgaria.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Bulgaria.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\BurkinaFaso.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BurkinaFaso.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Burundi.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Burundi.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Cambodia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Cambodia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Cameroon.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Cameroon.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Canada.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Canada.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\CapeVerde.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CapeVerde.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\CaymanIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CaymanIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\CentralAfricanRepublic.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CentralAfricanRepublic.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Chad.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Chad.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Chile.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Chile.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\China.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>China.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\ChristmasIsland.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ChristmasIsland.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\CocosIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CocosIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Colombia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Colombia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Comoros.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Comoros.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Congo.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Congo.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\CongoDRC.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CongoDRC.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\CookIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CookIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\CostaRica.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CostaRica.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\CoteIvoire.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CoteIvoire.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Croatia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Croatia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Cuba.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Cuba.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Cyprus.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Cyprus.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\CzechRepublic.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CzechRepublic.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Denmark.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Denmark.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Djibouti.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Djibouti.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Dominica.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Dominica.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\DominicanRepublic.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DominicanRepublic.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Ecuador.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Ecuador.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Egypt.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Egypt.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\ElSalvador.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ElSalvador.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\EquatorialGuinea.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EquatorialGuinea.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Eritrea.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Eritrea.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Estonia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Estonia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Ethiopia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Ethiopia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\FalklandIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FalklandIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\FaroeIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FaroeIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Fiji.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Fiji.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Finland.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Finland.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\France.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>France.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\FrenchGuiana.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FrenchGuiana.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\FrenchPolynesia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FrenchPolynesia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\FrenchSouthernTerritories.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FrenchSouthernTerritories.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Gabon.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Gabon.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Gambia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Gambia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Georgia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Georgia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Germany.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Germany.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Ghana.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Ghana.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Gibraltar.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Gibraltar.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Greece.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Greece.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Greenland.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Greenland.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Grenada.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Grenada.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Guadeloupe.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Guadeloupe.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Guam.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Guam.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Guatemala.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Guatemala.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Guernsey.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Guernsey.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Guinea.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Guinea.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\GuineaBissau.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GuineaBissau.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Guyana.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Guyana.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Haiti.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Haiti.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\HeardAndMcdonaldIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HeardAndMcdonaldIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Honduras.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Honduras.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\HongKong.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HongKong.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Hungary.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Hungary.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Iceland.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Iceland.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\India.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>India.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Indonesia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Indonesia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Iran.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Iran.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Iraq.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Iraq.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Ireland.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Ireland.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\IsleOfMan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>IsleOfMan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Israel.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Israel.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Italy.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Italy.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Jamaica.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Jamaica.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Japan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Japan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Jersey.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Jersey.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Jordan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Jordan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Kazakhstan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Kazakhstan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Kenya.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Kenya.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Kiribati.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Kiribati.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Kuwait.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Kuwait.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Kyrgyzstan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Kyrgyzstan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Laos.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Laos.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Latvia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Latvia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Lebanon.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Lebanon.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Lesotho.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Lesotho.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Liberia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Liberia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Libya.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Libya.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Liechtenstein.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Liechtenstein.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Lithuania.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Lithuania.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Luxembourg.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Luxembourg.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Macao.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Macao.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Macedonia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Macedonia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Madagascar.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Madagascar.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Malawi.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Malawi.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Malaysia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Malaysia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Maldives.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Maldives.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Mali.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Mali.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Malta.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Malta.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\MarshallIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MarshallIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Martinique.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Martinique.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Mauritania.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Mauritania.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Mauritius.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Mauritius.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Mayotte.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Mayotte.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Mexico.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Mexico.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Micronesia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Micronesia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Moldova.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Moldova.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Monaco.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Monaco.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Mongolia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Mongolia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Montenegro.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Montenegro.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Montserrat.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Montserrat.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Morocco.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Morocco.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Mozambique.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Mozambique.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Myanmar.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Myanmar.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Namibia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Namibia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Nauru.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Nauru.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Nepal.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Nepal.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Netherlands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Netherlands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\NetherlandsAntilles.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>NetherlandsAntilles.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\NewCaledonia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>NewCaledonia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\NewZealand.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>NewZealand.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Nicaragua.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Nicaragua.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Niger.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Niger.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Nigeria.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Nigeria.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Niue.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Niue.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\NorfolkIsland.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>NorfolkIsland.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\NorthernMarianaIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>NorthernMarianaIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\NorthKorea.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>NorthKorea.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Norway.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Norway.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Oman.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Oman.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Pakistan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Pakistan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Palau.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Palau.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\PalestinianTerritory.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PalestinianTerritory.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Panama.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Panama.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\PapuaNewGuinea.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PapuaNewGuinea.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Paraguay.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Paraguay.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Peru.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Peru.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Philippines.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Philippines.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Pitcairn.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Pitcairn.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Poland.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Poland.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Portugal.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Portugal.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\PuertoRico.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PuertoRico.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Qatar.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Qatar.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Reunion.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Reunion.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Romania.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Romania.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Russia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Russia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Rwanda.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Rwanda.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SaintBarthelemy.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SaintBarthelemy.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SaintHelena.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SaintHelena.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SaintKittsandNevis.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SaintKittsandNevis.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SaintLucia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SaintLucia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SaintMartin.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SaintMartin.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SaintPierreAndMiquelon.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SaintPierreAndMiquelon.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SaintVincentAndGrenadines.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SaintVincentAndGrenadines.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Samoa.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Samoa.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SanMarino.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SanMarino.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SaoTomeAndPrincipe.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SaoTomeAndPrincipe.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SaudiArabia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SaudiArabia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Senegal.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Senegal.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Serbia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Serbia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Seychelles.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Seychelles.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SierraLeone.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SierraLeone.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Singapore.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Singapore.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Slovakia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Slovakia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Slovenia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Slovenia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SolomonIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SolomonIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Somalia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Somalia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SouthAfrica.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SouthAfrica.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SouthGeorgia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SouthGeorgia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SouthKorea.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SouthKorea.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SouthSudan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SouthSudan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Spain.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Spain.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SriLanka.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SriLanka.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Sudan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Sudan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Suriname.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Suriname.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\SvalbardAndJanMayenIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SvalbardAndJanMayenIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Swaziland.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Swaziland.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Sweden.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Sweden.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Switzerland.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Switzerland.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Syria.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Syria.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Taiwan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Taiwan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Tajikistan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Tajikistan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Tanzania.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Tanzania.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Thailand.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Thailand.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\TimorLeste.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TimorLeste.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Togo.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Togo.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Tokelau.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Tokelau.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Tonga.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Tonga.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\TrinidadAndTobago.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TrinidadAndTobago.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Tunisia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Tunisia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Turkey.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Turkey.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Turkmenistan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Turkmenistan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\TurksAndCaicosIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TurksAndCaicosIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Tuvalu.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Tuvalu.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Uganda.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Uganda.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Ukraine.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Ukraine.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\UnitedArabEmirates.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UnitedArabEmirates.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\UnitedKingdom.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UnitedKingdom.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\UnitedStatesOfAmerica.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UnitedStatesOfAmerica.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Uruguay.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Uruguay.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\USMinorOutlyingIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>USMinorOutlyingIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Uzbekistan.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Uzbekistan.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Vanuatu.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Vanuatu.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\VaticanCity.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>VaticanCity.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Venezuela.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Venezuela.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Vietnam.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Vietnam.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\VirginIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>VirginIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\WallisAndFutunaIslands.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WallisAndFutunaIslands.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\WesternSahara.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WesternSahara.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Yemen.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Yemen.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Zambia.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Zambia.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Translations\Zimbabwe.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Zimbabwe.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Translations\Afghanistan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Afghanistan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\AlandIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AlandIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Albania.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Albania.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Algeria.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Algeria.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\AmericanSamoa.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AmericanSamoa.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Andorra.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Andorra.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Angola.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Angola.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Anguilla.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Anguilla.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Antarctica.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Antarctica.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\AntiguaAndBarbuda.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AntiguaAndBarbuda.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Argentina.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Argentina.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Armenia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Armenia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Aruba.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Aruba.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Australia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Australia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Austria.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Austria.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Azerbaijan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Azerbaijan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Bahamas.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Bahamas.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Bahrain.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Bahrain.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Bangladesh.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Bangladesh.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Barbados.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Barbados.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Belarus.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Belarus.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Belgium.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Belgium.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Belize.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Belize.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Benin.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Benin.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Bermuda.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Bermuda.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Bhutan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Bhutan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Bolivia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Bolivia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\BosniaAndHerzegovina.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BosniaAndHerzegovina.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Botswana.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Botswana.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\BouvetIsland.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BouvetIsland.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Brazil.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Brazil.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\BritishIndianOceanTerritory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BritishIndianOceanTerritory.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\BritishVirginIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BritishVirginIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Brunei.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Brunei.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Bulgaria.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Bulgaria.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\BurkinaFaso.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BurkinaFaso.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Burundi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Burundi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Cambodia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Cambodia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Cameroon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Cameroon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Canada.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Canada.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\CapeVerde.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CapeVerde.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\CaymanIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CaymanIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\CentralAfricanRepublic.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CentralAfricanRepublic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Chad.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Chad.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Chile.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Chile.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\China.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>China.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\ChristmasIsland.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ChristmasIsland.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\CocosIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CocosIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Colombia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Colombia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Comoros.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Comoros.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Congo.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Congo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\CongoDRC.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CongoDRC.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\CookIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CookIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\CostaRica.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CostaRica.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\CoteIvoire.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CoteIvoire.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Croatia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Croatia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Cuba.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Cuba.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Cyprus.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Cyprus.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\CzechRepublic.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CzechRepublic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Denmark.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Denmark.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Djibouti.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Djibouti.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Dominica.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Dominica.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\DominicanRepublic.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DominicanRepublic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Ecuador.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ecuador.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Egypt.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Egypt.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\ElSalvador.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ElSalvador.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\EquatorialGuinea.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EquatorialGuinea.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Eritrea.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Eritrea.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Estonia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Estonia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Ethiopia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ethiopia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\FalklandIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FalklandIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\FaroeIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FaroeIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Fiji.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Fiji.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Finland.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Finland.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\France.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>France.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\FrenchGuiana.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrenchGuiana.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\FrenchPolynesia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrenchPolynesia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\FrenchSouthernTerritories.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrenchSouthernTerritories.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Gabon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Gabon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Gambia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Gambia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Georgia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Georgia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Germany.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Germany.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Ghana.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ghana.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Gibraltar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Gibraltar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Greece.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Greece.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Greenland.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Greenland.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Grenada.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Grenada.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Guadeloupe.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Guadeloupe.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Guam.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Guam.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Guatemala.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Guatemala.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Guernsey.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Guernsey.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Guinea.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Guinea.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\GuineaBissau.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GuineaBissau.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Guyana.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Guyana.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Haiti.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Haiti.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\HeardAndMcdonaldIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HeardAndMcdonaldIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Honduras.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Honduras.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\HongKong.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HongKong.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Hungary.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Hungary.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Iceland.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Iceland.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\India.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>India.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Indonesia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Indonesia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Iran.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Iran.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Iraq.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Iraq.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Ireland.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ireland.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\IsleOfMan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IsleOfMan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Israel.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Israel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Italy.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Italy.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Jamaica.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Jamaica.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Japan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Japan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Jersey.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Jersey.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Jordan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Jordan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Kazakhstan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Kazakhstan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Kenya.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Kenya.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Kiribati.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Kiribati.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Kuwait.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Kuwait.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Kyrgyzstan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Kyrgyzstan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Laos.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Laos.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Latvia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Latvia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Lebanon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lebanon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Lesotho.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lesotho.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Liberia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Liberia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Libya.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Libya.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Liechtenstein.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Liechtenstein.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Lithuania.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lithuania.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Luxembourg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Luxembourg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Macao.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Macao.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Macedonia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Macedonia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Madagascar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Madagascar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Malawi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Malawi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Malaysia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Malaysia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Maldives.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Maldives.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Mali.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mali.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Malta.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Malta.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\MarshallIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MarshallIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Martinique.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Martinique.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Mauritania.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mauritania.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Mauritius.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mauritius.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Mayotte.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mayotte.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Mexico.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mexico.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Micronesia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Micronesia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Moldova.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Moldova.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Monaco.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Monaco.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Mongolia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mongolia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Montenegro.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Montenegro.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Montserrat.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Montserrat.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Morocco.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Morocco.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Mozambique.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Mozambique.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Myanmar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Myanmar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Namibia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Namibia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Nauru.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Nauru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Nepal.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Nepal.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Netherlands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Netherlands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\NetherlandsAntilles.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NetherlandsAntilles.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\NewCaledonia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NewCaledonia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\NewZealand.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NewZealand.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Nicaragua.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Nicaragua.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Niger.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Niger.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Nigeria.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Nigeria.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Niue.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Niue.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\NorfolkIsland.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NorfolkIsland.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\NorthernMarianaIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NorthernMarianaIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\NorthKorea.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NorthKorea.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Norway.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Norway.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Oman.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Oman.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Pakistan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Pakistan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Palau.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Palau.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\PalestinianTerritory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PalestinianTerritory.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Panama.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Panama.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\PapuaNewGuinea.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PapuaNewGuinea.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Paraguay.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Paraguay.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Peru.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Peru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Philippines.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Philippines.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Pitcairn.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Pitcairn.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Poland.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Poland.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Portugal.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Portugal.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\PuertoRico.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PuertoRico.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Qatar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Qatar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Reunion.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Reunion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Romania.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Romania.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Russia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Russia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Rwanda.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Rwanda.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SaintBarthelemy.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SaintBarthelemy.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SaintHelena.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SaintHelena.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SaintKittsandNevis.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SaintKittsandNevis.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SaintLucia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SaintLucia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SaintMartin.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SaintMartin.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SaintPierreAndMiquelon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SaintPierreAndMiquelon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SaintVincentAndGrenadines.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SaintVincentAndGrenadines.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Samoa.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Samoa.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SanMarino.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SanMarino.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SaoTomeAndPrincipe.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SaoTomeAndPrincipe.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SaudiArabia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SaudiArabia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Senegal.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Senegal.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Serbia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Serbia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Seychelles.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Seychelles.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SierraLeone.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SierraLeone.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Singapore.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Singapore.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Slovakia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Slovakia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Slovenia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Slovenia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SolomonIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SolomonIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Somalia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Somalia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SouthAfrica.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SouthAfrica.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SouthGeorgia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SouthGeorgia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SouthKorea.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SouthKorea.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SouthSudan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SouthSudan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Spain.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Spain.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SriLanka.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SriLanka.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Sudan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sudan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Suriname.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Suriname.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\SvalbardAndJanMayenIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SvalbardAndJanMayenIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Swaziland.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Swaziland.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Sweden.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sweden.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Switzerland.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Switzerland.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Syria.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Syria.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Taiwan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Taiwan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Tajikistan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tajikistan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Tanzania.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tanzania.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Thailand.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Thailand.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\TimorLeste.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimorLeste.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Togo.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Togo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Tokelau.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tokelau.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Tonga.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tonga.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\TrinidadAndTobago.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TrinidadAndTobago.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Tunisia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tunisia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Turkey.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Turkey.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Turkmenistan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Turkmenistan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\TurksAndCaicosIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TurksAndCaicosIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Tuvalu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tuvalu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Uganda.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Uganda.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Ukraine.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ukraine.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\UnitedArabEmirates.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UnitedArabEmirates.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\UnitedKingdom.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UnitedKingdom.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\UnitedStatesOfAmerica.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UnitedStatesOfAmerica.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Uruguay.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Uruguay.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\USMinorOutlyingIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>USMinorOutlyingIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Uzbekistan.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Uzbekistan.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Vanuatu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Vanuatu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\VaticanCity.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>VaticanCity.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Venezuela.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Venezuela.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Vietnam.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Vietnam.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\VirginIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>VirginIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\WallisAndFutunaIslands.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WallisAndFutunaIslands.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\WesternSahara.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WesternSahara.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Yemen.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Yemen.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Zambia.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Zambia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Translations\Zimbabwe.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Zimbabwe.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>
