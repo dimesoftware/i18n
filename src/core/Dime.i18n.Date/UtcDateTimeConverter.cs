@@ -56,7 +56,7 @@ namespace System.Globalization
             else
             {
                 // Get local DateTime instance into a LocalDateTime object
-                LocalDateTime localDateTime = new(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute);
+                LocalDateTime localDateTime = new(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond);
 
                 // Get the users' time zone
                 IDateTimeZoneProvider timeZoneProvider = DateTimeZoneProviders.Tzdb;
