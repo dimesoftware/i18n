@@ -4,19 +4,19 @@
 		<Description>Date-related utilities.</Description>
 		<AssemblyTitle>Dime.Utilities</AssemblyTitle>
 		<Authors>Dime Software</Authors>
-		<TargetFrameworks>net8.0</TargetFrameworks>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
 		<AssemblyName>Dime.i18n.Date</AssemblyName>
 		<PackageId>Dime.i18n.Date</PackageId>
 		<PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
 		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
 		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
 		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-		<Version>1.1.1.0</Version>
+		<Version>1.2.0.0</Version>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<IncludeSource>True</IncludeSource>
 		<IncludeSymbols>True</IncludeSymbols>
-		<AssemblyVersion>1.1.0.0</AssemblyVersion>
-		<FileVersion>1.1.0.0</FileVersion>
+		<AssemblyVersion>1.2.0.0</AssemblyVersion>
+		<FileVersion>1.2.0.0</FileVersion>
 		<RootNamespace>Dime.i18n.Date</RootNamespace>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryType>git</RepositoryType>
@@ -26,7 +26,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="NodaTime" Version="3.1.9" />
+		<PackageReference Include="NodaTime" Version="3.2.0" />
 		<PackageReference Include="System.Globalization" Version="4.3.0" />
 		<PackageReference Include="System.Reflection" Version="4.3.0" />
 		<PackageReference Include="System.Threading.Thread" Version="4.3.0" />

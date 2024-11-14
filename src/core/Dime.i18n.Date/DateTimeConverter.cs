@@ -21,9 +21,7 @@ namespace System.Globalization
             if (string.IsNullOrEmpty(timeZone))
                 return;
 
-            TimeZone = TzdbDateTimeZoneSource.Default.ZoneLocations.Any(x => x.ZoneId == timeZone)
-                ? timeZone
-                : throw new ArgumentException("Invalid time zone", nameof(timeZone));
+            TimeZone = TzdbDateTimeZoneSource.Default.ZoneLocations.Any(x => x.ZoneId == timeZone) ? timeZone : throw new ArgumentException("Invalid time zone", nameof(timeZone));
         }
 
         protected bool UseCurrentCulture => string.IsNullOrEmpty(TimeZone);
