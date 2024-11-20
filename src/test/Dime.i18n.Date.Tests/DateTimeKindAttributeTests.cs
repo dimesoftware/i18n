@@ -50,8 +50,6 @@ namespace System.Globalization.Tests
         private class DateTimeTestClass
         {
             [DateTimeKindAttribute(DateTimeKind.Utc)]
-            // ReSharper disable once AutoPropertyCanBeMadeGetOnly.Local
-            // ReSharper disable once MemberCanBePrivate.Local
             public DateTime MyDateTime { get; set; }
 
             [DateTimeKindAttribute(DateTimeKind.Utc)]

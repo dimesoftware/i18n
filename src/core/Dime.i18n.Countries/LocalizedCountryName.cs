@@ -1,7 +1,4 @@
-﻿using System.Numerics;
-using System.Runtime.CompilerServices;
-
-namespace Dime.i18n.Countries.Nations
+﻿namespace Dime.i18n.Countries.Nations
 {
     public class LocalizedCountryName
     {

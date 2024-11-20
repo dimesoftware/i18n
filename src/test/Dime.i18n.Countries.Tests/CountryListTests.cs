@@ -36,7 +36,6 @@ namespace System.Globalization.Countries.Tests
             Assert.True(countries.Distinct().Count() == 247);
         }
 
-
         [Fact]
         public void Country_GetTranslations_ShouldEnumerate()
         {
