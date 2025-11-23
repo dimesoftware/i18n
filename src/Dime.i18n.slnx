@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="core/Dime.i18n.Countries/Dime.i18n.Countries.csproj" />
+  <Project Path="core/Dime.i18n.Date/Dime.i18n.Date.csproj" />
+  <Project Path="test/Dime.i18n.Countries.Tests/Dime.i18n.Countries.Tests.csproj" />
+  <Project Path="test/Dime.i18n.Date.Tests/Dime.i18n.Date.Tests.csproj" />
+</Solution>
