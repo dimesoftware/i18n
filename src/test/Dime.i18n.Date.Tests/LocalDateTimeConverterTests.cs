@@ -59,5 +59,35 @@ namespace System.Globalization.Tests
 
             Assert.True(outputValue == "2016-12-31 16:00");
         }
+
+        [Theory]
+        [InlineData("UTC")]
+        [InlineData("Etc/GMT")]
+        [InlineData("Romance Standard Time")]
+        [InlineData("W. Europe Standard Time")]
+        [InlineData("Europe/Kiev")]
+        public void LocalDateTimeConverter_Constructor_AnyTzdbIdOrWindowsId_IsAccepted(string timeZone)
+            => Assert.True(new LocalDateTimeConverter(timeZone) != null);
+
+        [Fact]
+        public void LocalDateTimeConverter_ConvertToLocalTime_WindowsId_ConvertsLikeItsIanaZone()
+        {
+            DateTime utc = new DateTime(2016, 12, 31, 15, 0, 0, DateTimeKind.Utc);
+
+            DateTime viaWindowsId = new LocalDateTimeConverter("Romance Standard Time").Convert(utc);
+            DateTime viaIanaId = new LocalDateTimeConverter("Europe/Paris").Convert(utc);
+
+            Assert.Equal(viaIanaId, viaWindowsId);
+            Assert.Equal(16, viaWindowsId.Hour);
+        }
+
+        [Fact]
+        public void LocalDateTimeConverter_ConvertToLocalTime_Utc_LeavesTheTimeAlone()
+        {
+            DateTime utc = new DateTime(2016, 12, 31, 15, 0, 0, DateTimeKind.Utc);
+
+            Assert.Equal(15, new LocalDateTimeConverter("UTC").Convert(utc).Hour);
+            Assert.Equal(15, new LocalDateTimeConverter("Etc/GMT").Convert(utc).Hour);
+        }
     }
 }

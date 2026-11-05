@@ -59,5 +59,14 @@ namespace System.Globalization.Tests
 
             Assert.True(outputValue == "2016-12-31 16:00");
         }
+
+        [Fact]
+        public void UtcDateTimeConverter_ConvertToUtc_WindowsIdAndUtc_Convert()
+        {
+            DateTime local = new DateTime(2016, 12, 31, 16, 0, 0);
+
+            Assert.Equal(15, new UtcDateTimeConverter("Romance Standard Time").Convert(local).Hour);
+            Assert.Equal(16, new UtcDateTimeConverter("UTC").Convert(local).Hour);
+        }
     }
 }
